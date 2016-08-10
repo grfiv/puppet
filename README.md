@@ -1,8 +1,9 @@
 # Puppet files for Ubuntu install
 
-# ==========================================================================
-# Clone the 'puppet' repo
-# ==========================================================================
+### ==========================================================================
+### Clone the 'puppet' repo
+### ==========================================================================
+```bash
 read -p "Download the github repo? yes/no > " response
 if echo "$response" | grep -iq "^y" ;then
     echo "downloading the github repo"
@@ -12,3 +13,4 @@ if echo "$response" | grep -iq "^y" ;then
 else
     echo "github repo not downloaded"
 fi
+```
