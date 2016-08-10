@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# based on https://www.digitalocean.com/community/tutorials/
+#          how-to-set-up-a-masterless-puppet-environment-on-ubuntu-14-04
+
 if [ `id -u` = 0 ] ; then
 
     wget -O /tmp/puppetlabs.deb http://apt.puppetlabs.com/puppetlabs-release-$(lsb_release -cs).deb
@@ -35,3 +38,4 @@ EOF
 else
     echo "Please enter sudo su before running this script"
 fi
+
